@@ -1,19 +1,23 @@
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import javax.swing.JFrame;
-import javax.swing.jPanel;
-@SuppressWarnings("serial")
-public class Ball_Bounce extends JPanel{
+import java.awat.Graphics2D;
+class Ball_Bounce{
+
     //Initaialize ball position
-    int x = 0;
-    int y = 0;
-    int xd = -1
-    int yd = -1
-    
-    private void moveBall(){
-        x = x +1;
-        y = y +1; 
+    int x = 0, y = 0; xVelocity=1, yVelocity=1
+
+    private static final int Diameter = 30;
+    private Game game;
+
+    public Ball_Bounce(Game game){
+        this.game=game;
+    }
+    Void moveBall_Bounce(){
+        if (x + xVelocity > game.getWidth()-DIAMETER)
+            xVelocity =-1
+        else if (x<0)
+            xVelocity =1
+            if (y + yVelocity > game.getHeight()-DIAMETER)
+                y
+    }
     }
     @Override
     public void print(Graphincs g){
